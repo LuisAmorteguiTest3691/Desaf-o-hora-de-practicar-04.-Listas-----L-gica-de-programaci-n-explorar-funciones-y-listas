@@ -1,0 +1,75 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+.animacion {
+    animation: miAnimacion 1s forwards;
+  }
+  
+  @keyframes miAnimacion {
+    0% 
+    { 
+        opacity: 0; 
+        transform: translateY(-20px);
+        color: blue;
+    }
+    100% 
+    { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+
+  }
+
+/* Ajusta un margin-top si quieres que el contenido no se “suba” */
+.cabecera {
+    padding-top: 10px;
+}
+.entradas:focus {
+    background: #ECFEFF;
+}
+
+.boton-personalizado {
+    background: #1ad5d5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+.boton-personalizado:hover {
+    background-color: #0ac7c7;
+}
+.boton-personalizado:active {
+    background: #1ad5d5;
+}
+.cabecera {
+    padding-top: 10px;
+}
+.titulo {
+    cursor: pointer;
+    animation: cambioColor 6s infinite;
+}
+.iconos {
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 25px; 
+    animation: cambioColor 4s infinite ease-in-out;
+}
+@keyframes cambioColor {
+    0% {
+        color: #0066ff;
+    }
+    33% {
+        color: #00ffcc;
+    }
+    66% {
+        color: #e600e6;
+    }
+    100% {
+        color: #00ffff;
+    }
+}
